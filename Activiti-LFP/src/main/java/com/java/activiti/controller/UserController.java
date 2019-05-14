@@ -70,7 +70,7 @@ public class UserController {
 		return null;
 	}
 	
-   @RequestMapping("/logout")
+    @RequestMapping("/logout")
     public String userLogout(HttpServletResponse response,HttpServletRequest request){
         HttpSession session = request.getSession();
         session.setAttribute("currentMemberShip", null);
